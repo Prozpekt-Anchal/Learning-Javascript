@@ -75,18 +75,18 @@ const promisefive = new Promise(function(resolve,reject){
 
  promise5async();
 
-//  const getUserData = async function fetchApiData() {
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users');
-//         const data = await response.json();
-//         console.log(data);
-//     } catch (error) {
-//         console.log(`E: ${error}`);
+ const getUserData = async function fetchApiData() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(`E: ${error}`);
         
-//     }
-//  }
+    }
+ }
 
-//  getUserData();
+ getUserData();
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response) => {
