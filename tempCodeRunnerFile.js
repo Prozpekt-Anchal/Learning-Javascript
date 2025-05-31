@@ -1,2 +1,3 @@
-let str = arr.toString();
-// console.log(`String is ${str}`);
+console.log(user.username);
+// console.log(user.welcomeMessage());
+// console.log(this);
