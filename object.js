@@ -15,11 +15,14 @@
  console.log(multiplby5.power);
  console.log(multiplby5.prototype); // Output: {constructor: ƒ}
 
+
+ //Constructor Function 
 function productPrice(productName,price){
     this.productName = productName;
     this.price = price;
 }
 
+//Adding Methods
 productPrice.prototype.withgst = function(){
     return this.price = this.price + (this.price/100)*18;
 }
@@ -32,6 +35,22 @@ const tea = new productPrice("Tea",30);
 console.log(tea.price);
 console.log(tea.withgst());
 tea.finalPrice();
+
+// new keyword is used to create an object from the constructor function.
+
+// this inside the constructor refers to the new object being created.
+
+// 'What new Does Behind the Scenes
+// Creates a new empty object.
+
+// Links it to the constructor’s prototype.
+
+// Binds this to the new object and calls the constructor.
+
+// Returns the new object (unless constructor returns a non-primitive manually).'
+
+
+
 
 
  
